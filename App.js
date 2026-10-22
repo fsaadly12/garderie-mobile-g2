@@ -40,7 +40,7 @@ export default function App() {
   const message = (text) => Alert.alert(text);
 
   const renderMenu = ({ item }) => (
-    <TouchableOpacity style={styles.card} onPress={() => message(item.titre)}>
+    <TouchableOpacity style={styles.card} onPress={() => Alert.alert('Menu sélectionné', item.titre)}>
       <Text style={styles.menuIcon}>{item.icone}</Text>
       <View style={{ flex: 1 }}>
         <Text style={styles.menuTitle}>{item.titre}</Text>
